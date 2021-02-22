@@ -9,4 +9,4 @@ This project was created with [Create React App](https://github.com/facebook/cre
 - `npm install`
 - `npm start`
 
-[See it live here.](https:/projects.jpkarlsven.com/efuse-work-sample)
+[See it live here.](https://projects.jpkarlsven.com/efuse-work-sample)
