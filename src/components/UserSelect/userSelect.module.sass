@@ -1,0 +1,27 @@
+@use 'styles-global/variables'
+
+.userSelect
+  cursor: pointer
+  display: block
+  position: fixed
+  bottom: 5px
+  left: 5px
+  outline: none
+  & > svg
+    display: block
+  &:hover, &:focus
+    color: variables.$primary-blue
+
+.tooltipContent
+  user-select: none
+  .title
+    border-bottom: 1px solid #fff
+    font-weight: 600
+    padding-bottom: 4px
+    margin-bottom: 8px
+  .tooltipSelector
+    cursor: pointer
+    &:hover, &:focus
+      color: variables.$primary-blue
+    &:not(:last-child)
+      margin-bottom: 4px

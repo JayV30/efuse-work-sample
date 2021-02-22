@@ -1,0 +1,18 @@
+@use 'styles-global/variables'
+
+.commentButton
+  align-items: center
+  color: variables.$lt-grey
+  cursor: pointer
+  display: inline-flex
+  font-size: 0.9rem
+  font-weight: 500
+  line-height: 1.2
+  outline: none
+  transition: color 0.1s ease-in-out
+  &:not(:last-child)
+    margin-right: 1rem
+  &:focus, &:hover
+    color: variables.$primary-blue
+  svg
+    margin-right: 0.4rem

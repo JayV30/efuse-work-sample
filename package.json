@@ -6,14 +6,24 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.1",
+    "@tippyjs/react": "^4.2.0",
+    "axios": "^0.21.1",
+    "framer-motion": "^3.6.1",
+    "luxon": "^1.26.0",
+    "node-sass": "npm:sass@^1.32.8",
     "react": "^17.0.1",
+    "react-app-polyfill": "^2.0.0",
     "react-dom": "^17.0.1",
+    "react-icons": "^4.2.0",
     "react-scripts": "4.0.2",
+    "recoil": "^0.1.2",
+    "uuid": "^8.3.2",
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "env-cmd -e default,development react-scripts start",
+    "build": "env-cmd -e default,production react-scripts build",
+    "build:stage": "env-cmd -e default,stage react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -25,14 +35,15 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+      "since 2010"
     ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
   }
 }

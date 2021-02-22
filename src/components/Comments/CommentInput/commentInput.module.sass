@@ -1,0 +1,28 @@
+@use 'styles-global/variables'
+
+.commentInput
+  display: block
+  position: relative
+  input
+    background-color: variables.$post-footer-background
+    border: 1px solid variables.$grey
+    border-radius: 300px
+    color: variables.$grey
+    font-size: 0.9rem
+    outline: none
+    padding: 0.5rem 2rem 0.5rem 1rem
+    transition: box-shadow 0.1s ease-in-out
+    width: 100%
+    &:hover, &:focus
+      box-shadow: 0 0 0.2rem 0.2rem rgba(variables.$primary-blue, 0.5)
+    &::placeholder
+      color: rgba(#7087A3, 0.8)
+      font-size: 0.9rem
+      font-weight: 400
+  svg
+    color: variables.$primary-blue
+    cursor: pointer
+    outline: none
+    position: absolute
+    right: 6px
+    top: 8px

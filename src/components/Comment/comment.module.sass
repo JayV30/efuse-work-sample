@@ -1,0 +1,77 @@
+@use 'styles-global/variables'
+
+.comment
+  align-items: center
+  display: flex
+  width: 100%
+  .userIcon
+    flex-grow: 0
+    flex-shrink: 0
+    padding-right: 0.75rem
+  .commentWrapper
+    background-color: variables.$comment-background
+    border-radius: variables.$comment-border-radius
+    box-shadow: variables.$comment-shadow
+    flex: 1 1 auto
+    padding: 1rem
+    .commentHeader
+      display: flex
+      margin-bottom: 0
+      .userInfo
+        flex: 1 1 auto
+        flex-direction: column
+        display: flex
+        .userName
+          font-size: 0.9rem
+          font-weight: 600
+          line-height: 1.5
+          margin-bottom: 0
+        .userRole
+          color: variables.$primary-blue
+          font-size: 0.8rem
+          font-weight: 400
+          line-height: 1.5
+          margin-bottom: 0
+      .postTimeDiff
+        color: variables.$lt-grey
+        font-size: 0.8rem
+        font-weight: 500
+        line-height: 1.3
+        margin-bottom: 0
+    .commentContent
+      font-size: 0.85rem
+      font-weight: 600
+      line-height: 1.5
+      margin-bottom: 0
+    .commentControls
+      display: flex
+      flex-wrap: wrap
+      margin-top: 0.45rem
+      margin-bottom: 0
+      user-select: none
+      & > span
+        margin: 0 !important
+        &:not(:last-child)
+          padding-right: 0.7rem
+          border-right: 0.15rem solid lighten(variables.$lt-grey, 10%)
+        &:not(:first-child)
+          padding-left: 0.7rem
+      & > .controlItem
+        align-items: center
+        color: variables.$lt-grey
+        display: inline-flex
+        font-size: 0.8rem
+        font-weight: 500
+        line-height: 1.2
+        outline: none
+        transition: color 0.1s ease-in-out
+        svg
+          margin-right: 0.4rem
+        &.editButton
+          cursor: pointer
+          &:focus, &:hover
+            color: variables.$primary-blue
+        &.deleteButton
+          cursor: pointer
+          &:focus, &:hover
+            color: variables.$primary-red
